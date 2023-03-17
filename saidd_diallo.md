@@ -22,7 +22,7 @@ DuckDB is a popular open-source analytical SQL database management system that i
 Overall, DuckDB is a powerful tool for data analysis and management that offers high performance and flexibility, making it an ideal choice for many data scientists and developers.  
 # **Installation:**
 To use DuckDB in Python, you need to install the DuckDB Python module, which can be done using pip:  
-![test](images\install.png)
+![test](images/install.PNG)
 
 ## **Serie,DataFrame,MultiIndex:**  
 DuckDB is an embedded SQL OLAP database management system that is designed to be highly efficient and scalable for analytics and data processing tasks. It provides support for storing and manipulating data in the form of Series and DataFrames, which are similar to those in the pandas library.  
