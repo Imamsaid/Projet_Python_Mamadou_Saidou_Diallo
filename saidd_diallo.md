@@ -35,15 +35,15 @@ A MultiIndex is a way of representing data with multiple levels of indexing in D
 To connect DuckDB to Python and create tables, you can use the duckdb Python module.   
 **A pratical exemple:**  
 Here's some sample code to get you started:  
-![test](images\Caspratique1.png)  
+![test](images/Caspratique1.PNG)  
 In this example, we first created a connection to DuckDB using duckdb.connect(). Then we created a table called example with two columns: integer id and string name. We then added two records to the table using INSERT INTO. Finally, we executed a SQL query to retrieve all the records in the table using SELECT * FROM, and displayed the results.  
 Here is an example of code to create a table, insert data and modify it using DuckDB and Python :  
-![test](images\insertupdate.png)  
+![test](images/insertupdate.PNG)  
 In this example, we created a table called example_table with three columns: id, name and age. We then added three records to the table using the INSERT INTO command. Finally, we displayed all the data in the table using the SELECT * FROM command and updated Alice's age to 30 using the UPDATE command.  
 You can also delete records from the table using the DELETE FROM command. For example, to delete the record with id equal to 2, you can use the DELETE FROM example_table WHERE id = 2 command.  
 Here is an example of using the DuckDB Python library functions to interact with a DuckDB database:  
 
-![test](images\fonction1.png)  
+![test](images/fonction1.PNG)  
 
 ![test](images\fonction2.png)   
 In this example, we created a
