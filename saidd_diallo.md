@@ -7,7 +7,7 @@
 [DataFrame](#dataframe)  
 [MultiIndex](#multiindex)
 
-![test](images/newlogo.png)
+![test](images/newlogo.PNG)
 
 
 # Duckdb 
