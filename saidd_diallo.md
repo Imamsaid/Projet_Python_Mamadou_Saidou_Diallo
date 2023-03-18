@@ -6,6 +6,8 @@
 [Serie](#série)
 [DataFrame](#dataframe)  
 [MultiIndex](#multiindex)
+[Conclusion](#conclusion-)
+[References](#references)
 
 
 ![test](images/newlogo.PNG)
@@ -51,7 +53,35 @@ Here is an example of using the DuckDB Python library functions to interact with
 ![test](images\fonction2.png)   
 In this example, we created a
 DuckDB database in memory, created a table with data, fetched the data into a cursor, created a Pandas dataframe and registered the dataframe to the database, loaded data from a CSV file, updated and deleted data in the table, then closed the connection.  
-This example shows how to use the duckdb.connect(), duckdb.Cursor.execute(), duckdb.Cursor.fetchall(), duckdb.Connection.register(), duckdb.Connection.copy_into(), duckdb.Cursor.execute() functions to perform basic operations on a DuckDB database using Python.  
+This example shows how to use the duckdb.connect(), duckdb.Cursor.execute(), duckdb.Cursor.fetchall(), duckdb.Connection.register(), duckdb.Connection.copy_into(), duckdb.Cursor.execute() functions to perform basic operations on a DuckDB database using Python. 
+# Fonctions
+First, you can create a DuckDB database using the Python module :  
+import duckdb
+
+** 1.Create Database in memory**
+con = duckdb.connect(':memory:')
+** 2.Then you can load the data into the database using the register function:**
+# Charger The data  from file CSV
+con.register('ventes', 'data/ventes.csv')  
+** 3.To find the best selling products in terms of sales, you can use an SQL query with a join and an aggregation :**  
+ ** 4.Perform an SQL query to find the best selling products in terms of sales:**  
+query = """
+SELECT produit, SUM(quantite_vendue * prix_unitaire) AS chiffre_affaires
+FROM ventes
+GROUP BY produit
+ORDER BY chiffre_affaires DESC
+LIMIT 10
+"""
+result = con.execute(query)
+
+# Afficher les résultats
+for row in result:
+    print(row)
+
+
+
+
+
 [# Potential Alternative of Duckdb:]()  
 **There are several potential alternatives to DuckDB for in-memory relational databases:**
 
