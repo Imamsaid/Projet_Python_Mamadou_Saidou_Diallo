@@ -3,7 +3,7 @@
 1.[Definition](#duckdb)  
 2.[Whay](#why)   
 3.[Installation](#installation)  
-4.[Pratiques](#pratical-exemple)
+4.[Pratiques](#pratical-exemple)  
 5.[Serie](#série)  
 6.[DataFrame](#dataframe)  
 7.[MultiIndex](#multiindex)    
