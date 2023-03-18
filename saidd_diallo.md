@@ -37,8 +37,11 @@ A DataFrame is a two-dimensional labeled data structure in DuckDB that consists 
 A MultiIndex is a way of representing data with multiple levels of indexing in DuckDB. It allows for data to be grouped and aggregated along different dimensions or levels, which can be useful for complex data analysis tasks. MultiIndex can be used with both Series and DataFrame objects.  
 To connect DuckDB to Python and create tables, you can use the duckdb Python module.   
 **A pratical exemple:**  
-# Add a line in the database
+# Add a line in the table
 ![test](images/pratique1.PNG)  
+# Modify a line in the table  
+# Delete  
+![test](images/PRATIQUE3.PNG) 
 Here's some sample code to get you started:  
 ![test](images/Caspratique1.PNG)  
 In this example, we first created a connection to DuckDB using duckdb.connect(). Then we created a table called example with two columns: integer id and string name. We then added two records to the table using INSERT INTO. Finally, we executed a SQL query to retrieve all the records in the table using SELECT * FROM, and displayed the results.  
