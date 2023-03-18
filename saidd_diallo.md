@@ -1,14 +1,16 @@
 
 # **Table des matieres**
-[Definition](#duckdb)  
-[Whay](#why)   
-[Installation](#installation)  
-[Serie](#série)
-[DataFrame](#dataframe)  
-[MultiIndex](#multiindex)  
-[Conclusion](#conclusion-)  
-[References](#references)  
-
+1.[Definition](#duckdb)  
+2.[Whay](#why)   
+3.[Installation](#installation)  
+4.[Pratiques](#pratical-exemple)
+5.[Serie](#série)  
+6.[DataFrame](#dataframe)  
+7.[MultiIndex](#multiindex)    
+8.[Fonctions](#fonctions)  
+9.[Conclusion](#conclusion-)  
+10.[References](#references)  
+********************************************************************
 
 ![test](images/newlogo.PNG)
 
@@ -36,7 +38,7 @@ A DataFrame is a two-dimensional labeled data structure in DuckDB that consists 
 ## [MultiIndex:](https://duckdb.org/docs/dataframe/introduction.)
 A MultiIndex is a way of representing data with multiple levels of indexing in DuckDB. It allows for data to be grouped and aggregated along different dimensions or levels, which can be useful for complex data analysis tasks. MultiIndex can be used with both Series and DataFrame objects.  
 To connect DuckDB to Python and create tables, you can use the duckdb Python module.   
-**A pratical exemple:**  
+# **pratical exemple:**  
 # Add a line in the table
 ![test](images/pratique1.PNG)  
 # Modify a line in the table  
@@ -80,7 +82,7 @@ result = con.execute(query)
 **Sprint résultats**
 for row in result:
     print(row)
-[# Potential Alternative of Duckdb:]()  
+# Potential Alternative of Duckdb: 
 **There are several potential alternatives to DuckDB for in-memory relational databases:**
 
 **SQLite:** SQLite is a lightweight and popular in-memory relational database. It is open-source, widely used, and supports a large number of programming languages, including Python.
