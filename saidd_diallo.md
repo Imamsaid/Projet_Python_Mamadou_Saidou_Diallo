@@ -5,9 +5,9 @@
 [Installation](#installation)  
 [Serie](#série)
 [DataFrame](#dataframe)  
-[MultiIndex](#multiindex)
-[Conclusion](#conclusion-)
-[References](#references)
+[MultiIndex](#multiindex)  
+[Conclusion](#conclusion-)  
+[References](#references)  
 
 
 ![test](images/newlogo.PNG)
