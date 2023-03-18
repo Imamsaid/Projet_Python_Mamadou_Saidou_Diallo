@@ -74,14 +74,9 @@ LIMIT 10
 """
 result = con.execute(query)
 
-# Afficher les résultats
+**Sprint résultats**
 for row in result:
     print(row)
-
-
-
-
-
 [# Potential Alternative of Duckdb:]()  
 **There are several potential alternatives to DuckDB for in-memory relational databases:**
 
